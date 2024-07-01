@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>BMI  Calculator</h1>
+    </header>
+    <div class="container">
+        <form>
+            <div class="input">
+                <label for="Age">Age</label>
+                <input type="text" id="Age" placeholder=" Enter Your Age" autocomplete="off">
+                <label for="Weight">Weight <span class="astrick">*</span></label>
+                <input type="text" id="Weight" placeholder=" Enter Your Weight (Kg)" required autocomplete="off">
+                <label for="Height">Height <span class="astrick">*</span></label>
+                <input type="text" id="Height" placeholder=" Enter Your Height (Cm)" required autocomplete="off">
+            </div>
+            <div class="gender">
+                <button>Male</button>
+                <button>Female</button>
+            </div>
+            <div class="calculate">
+                <input type="submit" value="Calculate BMI">
+            </div>
+            <div class="bmi">
+                <h4>BMI: </h4>
+                <span id="bmiValue"></span>
+            </div>
+            <div class="result">
+                <h4>Result:</h4>
+                <span id="resultValue"></span>
+            </div>
+        </form>
+        <button onclick="refreshPage() " class="refreshPage">Again</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

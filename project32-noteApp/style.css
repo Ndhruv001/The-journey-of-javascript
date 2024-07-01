@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(to left, lightblue,lightgreen);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
+}
+.heading{
+    margin-top: 20px;
+    color:darkblue;
+    font-size: 2rem;
+}
+.infoText{
+    margin: 10px;
+    color:darkblue;
+    font-size: 1rem;
+}
+.noteApp{
+    margin-top:20px;
+    padding:40px;
+    display: grid;
+    gap:30px;
+    grid-template-columns: repeat(auto-fill,250px);
+    justify-content: center;
+}
+.note{
+    height: 200px;
+    background-color: rgba(255,255,255,0.1);
+    border:none;
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+    resize: none;
+    border-radius: 15px;
+    outline:none;
+    padding:10px;
+    color:darkblue;
+    font-size: 1rem;
+}
+.note:hover,.note:focus{
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    transition: all 300ms ease;
+}
+.note::placeholder{
+    color:grey;
+    opacity:25%;
+}
+.addNote{
+    height: 200px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.3);
+    border-color: rgba(255,255,255,0.4);
+    font-size: 4rem;
+    color:rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-weight: 600;
+    outline:none;
+}
+.addNote:hover{
+    background-color: rgba(255,255,255,0.5);
+    color:rgba(0,0,0,0.6);
+    transition:all 300ms ease;
+}

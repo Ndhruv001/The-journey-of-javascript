@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(132, 196, 79);
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#input{
+    width: 300px;
+    height: 40px;
+    margin-top: 150px;
+    border-top-left-radius: 6px ;
+    border-top-right-radius: 6px;
+    border-bottom: 1px solid black;
+    padding:15px;
+    border:none;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgb(182, 179, 179);
+
+}
+.tasks{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    background-color: yellow;
+    padding:10px;
+}
+.check{
+    margin:0px 5px;
+    color:green;
+    cursor: pointer;
+}
+.trash{
+    color:red;
+    cursor: pointer;
+}
+.container .tasks:last-child{
+    border-bottom-left-radius: 6px ;
+    border-bottom-right-radius: 6px;
+}

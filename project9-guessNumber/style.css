@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: monospace;
+    background-color: #FDE74C;
+    border:5px solid black;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+   
+}
+.image img{
+    height: 110px;
+    width: 110px;
+}
+.title{
+    font-size: 1.7rem;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+#number{
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    border:3px solid rgb(0, 0, 0);
+    padding:8px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 15px;
+}
+#guess{
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    font-weight: 700;
+    border:3px solid rgb(0, 0, 0);
+    background-color: #b2deff;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+#guess:hover{
+    background-color: #88c9fa;
+}
+.result{
+    /* margin:20px auto; */
+    height: 220px;
+    /* width: 45%; */
+    width: 450px;
+    padding:15px;
+    background-color: hsl(0deg 0% 100% / 44%);
+    border-radius: 10px;
+    border: none;
+    overflow: auto;
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+}
+/* .result h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+} */
+/* .result span{
+    font-size: 1.5rem;
+    font-weight: 800;
+} */
+.result .victory{
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.result p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.footer{
+    display: flex;
+    gap:180px;    
+}
+.reload{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-weight: 700;
+    border:3px solid rgb(0, 0, 0);
+    background-color: #35ec2f;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding:5px;
+    margin:0;
+}
+.life{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-weight: 700;
+    border:3px solid rgb(0, 0, 0);
+    background-color: #a29df1;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding:5px;
+    margin:0;
+}
+.reload:hover{
+    background-color: #169911;
+}
+.life:hover{
+    background-color: #7069c9;
+}

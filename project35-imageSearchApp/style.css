@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    padding:20px;
+    text-align: center;
+    background-color: black;
+}
+.heading{
+    margin-bottom:30px;
+    font-weight: 900;
+    color:lightblue;
+    text-shadow: 0px 4px 8px  rgba(255, 255, 255, 0.5);
+}
+form{
+    width: 40%;
+    margin:10px auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.fa-solid {
+    position: absolute;
+    left:4%;
+    top:30%;
+    color:grey;
+}
+.input{
+    height: 40px;
+    width: 100%;
+    padding:15px 50px;
+    border-radius: 30px;
+    border:none;
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.7);
+    outline:none;
+    font-size: 1rem;
+    font-weight: 600;
+    color:darkblue;
+}
+.resultContainer{
+    margin-top:50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(170px,260px));
+    gap:40px;
+    justify-content: center;
+}
+.result{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+}
+.img{
+    width: 100%;
+    height: 80%;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+    object-position: center;
+    image-rendering: pixelated;
+}
+.description{
+    width: 100%;
+    height: 20%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(255, 243, 243);
+    padding:5px;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color:black;
+   font-weight: 600;
+}
+a:hover{
+    color:rgb(69, 196, 238);
+}
+.load{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    padding:10px;
+}
+.load.active{
+    display: block;
+}
+.loadMore{
+    margin:15px 0;
+    height: 30px;
+    width:90px;
+    border-radius: 5px;
+    border:none;
+    padding:10px 5px;
+    text-align: center;
+    color:black;
+    font-weight: 600;
+    background-color: lightblue;
+    box-shadow: 0 0 7px 2px rgba(255, 255, 255, 0.5);
+    transition: all 0.5s ease;
+}
+
+.loadMore:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 9px 3px rgba(255, 255, 255, 0.5);
+}

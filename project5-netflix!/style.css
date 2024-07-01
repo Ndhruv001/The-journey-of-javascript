@@ -1,0 +1,34 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 70vh;
+    background-image: url(./asset/image/front-image.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1000px , 100vw);
+    position: relative;
+}
+.box{
+    height: 70vh;
+    width: 100%;
+    opacity: 0.44;
+    background-color: black;
+    position: absolute;
+    top:0;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: blue;
+    padding:24px 32px ;
+}
+.logo img{
+    width: 140px;
+    z-index: 15;
+}
